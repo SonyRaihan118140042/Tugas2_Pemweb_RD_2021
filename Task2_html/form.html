@@ -1,0 +1,85 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="./form.css">
+        <title>Sign Up - Audiorama</title>
+             
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="title">
+
+
+            </div>
+
+            <div class="card">
+                <div class="header_card">
+                    <h3 class="title_card">Data Diri Sewa Alat Audio</h3>
+                </div>
+
+                <div class="body_card">
+                    <form class="form-pengunjung" method="GET" action="info.html">
+
+                        <div class="formcontent">
+                            <label for="nama">Nama Lengkap</label>
+                            <div class="forminput">
+                                <input type="text" name="nama" id="nama" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="formcontent">
+                            
+                            <div class="input-radio">
+                                <div>
+                                    <input type="radio" name="rent-return" id="rent-return" value="Peminjaman"> Peminjaman
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="rent-return" id="rent-return" value="Pengembalian"> Pengembalian
+                                </div>                                                      
+                            </div>
+                        </div>
+
+
+                        <div class="gear-selection">
+                            <div>
+                                <input type="checkbox" id="rec" name="Zoom H5" value="zoomh5">
+                                <label for="zoomh5"> Zoom H5 Audio Recorder</label><br>
+
+                                <input type="checkbox" id="mic" name="ISK CM20" value="cm20">
+                                <label for="cm20"> ISK CM20 Pencil Condenser Mic</label><br>
+
+                                <input type="checkbox" id="cable" name="XLR 5m" value="xlr">
+                                <label for="xlr"> XLR Cable 5m</label><br><br>
+
+                            </div>
+
+                        </div>
+
+                        <div class="formcontent">
+                            <label for="alamat">Alamat</label>
+                            <div class="forminput">
+                                <textarea class="form-control" name="alamat" id="alamat" ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="formcontent">
+                            <label for="email">Email</label>
+                            <div class="forminput">
+                                <input type="email" name="email" id="email" class="form-control" >
+                            </div>
+                        </div> 
+
+                        <div class="button">
+                            <button type="submit" class="submit">Submit</button>
+                        </div>       
+
+                    </form>
+
+                </div>
+            </div>
+        </div>        
+
+    </body>
+</html>

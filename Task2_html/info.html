@@ -1,0 +1,69 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="./info.css">
+        
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const nama = params.get('nama');
+            const jenisKelamin = params.get('rent-return');
+            const alamat = params.get('alamat')
+            const email = params.get('email');         
+            
+            window.onload = function() {
+                document.getElementById("nama").value = nama;
+                document.getElementById("jenisKelamin").value = jenisKelamin;
+                document.getElementById("alamat").value = alamat;
+                document.getElementById("email").value = email;
+            };
+        </script>
+    </head>
+    <body>        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Confirmation</h3>
+            </div>
+            <div class="card-body">
+                <form class="form-pengunjung">
+                    <div class="formContent">
+                        <label for="nama">Nama</label>
+                        <div class="inputan">
+                            <input type="text" name="nama" id="nama" class="form-control" value="nama">
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="jenisKelamin">Jenis Kelamin</label>
+                        <div class="inputan">
+                            <input type="text" id="jenisKelamin" class="form-control" value="jenisKelamin">                     
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="alamat">Alamat</label>
+                        <div class="inputan">
+                            <textarea class="form-control" name="Alamat" id="alamat" value="alamat"></textarea>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="email">Email</label>
+                        <div class="inputan">
+                            <input type="email" name="email" id="email" class="form-control" value="email">
+                        </div>
+                    </div> 
+                    <div class="reminder">
+                        <p>Pastikan Data Sesuai Dengan Data Diri Anda</p>
+
+                    </div>
+                </form>
+            </div>
+            <div class="btn">
+                <div class="back-btn">
+                    <a href="form.html">
+                        Next
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
